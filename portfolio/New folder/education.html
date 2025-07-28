@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>education</title>
     <style>
-        body{
+        /* body{
             background-color: beige;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: larger;
@@ -48,7 +48,113 @@
         td{
             color: rgb(81, 41, 41);
         }
-    </style>
+        @media screen and (max-width: 450px) {
+            body {
+                font-size: 10px; /* Adjust font size for smaller screens */
+            /* }
+            .edu nav {
+                /* text-align: center; /* Center navigation links on small screens */
+            /* } */
+            /* .a a {  */
+                /* margin: 5px 0; Add some spacing between links */
+
+            /* } */
+             /* */ */
+        
+    body {
+        background-color: beige;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .edu {
+        padding: 20px;
+    }
+
+    nav.a {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .a a {
+        color: brown;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .a a:hover {
+        font-size: larger;
+    }
+
+    .edu h1 {
+        text-transform: uppercase;
+        color: rgb(135, 1, 1);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        background-color: white;
+        border: 2px solid brown;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .card h2 {
+        color: maroon;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: rgb(81, 41, 41);
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 450px) {
+        body {
+            font-size: 14px;
+        }
+
+        nav.a {
+            text-align: center;
+        }
+
+        .a a {
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .card {
+            width: 90%;
+        }
+
+        .card h2 {
+            font-size: 16px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+    }
+</style>
+
+    <!-- </style>  -->
 </head>
 <body>
     <div class="edu">
@@ -84,7 +190,7 @@
             </p>
         </ul>
         </div> -->
-        <table>
+        <!-- <table>
             <th> diploma in electronics engineering</th>
             <th> plus two in computer science</th>
             <th>SSLC</th>
@@ -101,8 +207,26 @@
                 <td><br> year:2023</td>
                 <td><br>year:2019</td>
                 <td><br>year:2017</td>
-            </tr>
-        </table>
+            </tr> -->
+        <!-- </table> -->
+         <div class="card-container">
+    <div class="card">
+        <h2>Diploma in Electronics Engineering</h2>
+        <p>Government Women's Polytechnic College, Ernakulam</p>
+        <p>Year: 2023</p>
+    </div>
+    <div class="card">
+        <h2>Plus Two in Computer Science</h2>
+        <p>St. Teresa's Convent Girls HSS, Ernakulam</p>
+        <p>Year: 2019</p>
+    </div>
+    <div class="card">
+        <h2>SSLC (10th)</h2>
+        <p>S.D.P.Y.G.V.H.S. School, Palluruthy</p>
+        <p>Year: 2017</p>
+    </div>
+        </div>
+
     </div>
 </body>
 </html>

@@ -9,7 +9,7 @@
     <style>
 
         body{
-            background-color:bisque;
+            background-color: rgb(247, 255, 196);
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         .con nav{
@@ -20,6 +20,7 @@
             text-decoration: none;
             text-transform: uppercase;
             padding: 5px;
+            color: brown;
         }
         .navigation a:hover{
             color: darkred;
@@ -34,10 +35,11 @@
         }
         .num a{
             text-decoration: none;
-            color: black;
+            color: brown;
             font-size: large;
             padding: 15px;
             text-align: center;
+            
         }
         .num a:hover{
             color: darkred;
@@ -45,7 +47,8 @@
         }
         .num{
             text-align: center;
-            background-color: rgb(248, 197, 178);
+            background-color: rgb(247, 255, 196);
+            color: brown;
         }
         .con h2{
             text-transform: uppercase;
@@ -56,13 +59,13 @@
         }
         .social a{
             padding: 50px;
-            font-size: 50px;
+            font-size: 30px;
             color: rgb(70, 13, 13);
             text-align: center;
         }
         .social a:hover{
             color: darkred;
-            font-size: 55px;
+            font-size: 40px;
         }
         /* .con div{
             background-color: aqua;
@@ -128,6 +131,43 @@
             background-color: #a04545;
             transition: 1.3s ease;
             }
+            @media screen and (max-width: 450px) {
+                body {
+                    font-size: 14px;
+                }
+                .con nav {
+                    text-align: center;
+                }
+                .navigation a {
+                    display: inline-block;
+                    margin: 5px;
+                }
+                .num a {
+                    display: block;
+                    margin: 10px 0;
+                }
+                .num a:active {
+                    font-size: 20px;
+                }
+                .con a {
+                    color: brown;
+                    text-decoration: none;
+                    font-size: large;
+                }
+                .con a:active {
+                    color: darkred;
+                    font-size: 30px;
+                }
+                .social a {
+                    font-size: 30px;
+                    padding: 20px;
+                }
+                .message {
+                    width: 50%;
+                    padding: 15px;
+
+                }
+            }
             
 
     </style>
@@ -151,22 +191,22 @@
         </div>
         <br><br>
     </div>
-    <div class="message" style="background: rgb(254, 214, 221);">
+    <div class="message" style="background: rgb(254, 250, 214);">
         <form action="https://formsubmit.co/priyajoy2668@gmail.com" method="POST">
             <label for="" style="color: brown;">Name:</label>
-            <input type="text" placeholder="Name..." name="name" style="background-color: #fac4c4;"><br>
+            <input type="text" placeholder="Name..." name="name" style="background-color: beige; width: 80%;"><br>
             <!-- <label for="">E-mail:</label> -->
             <!-- <input type="text" placeholder="E-mail..."><br> -->
             <label for="" style="color: brown;">Feedback:</label>
-            <textarea name="message" id="" placeholder="feedback" style="background-color: #fac4c4;"></textarea><br>
+            <textarea name="message" id="" placeholder="feedback" style="background-color: beige; width: 80%; height: 100%;" ></textarea><br>
             <!-- <button type="submit">send</button> -->
             <input type="hidden" name="_captcha" value="false">
             <!-- <input type="hidden" name="_next" value="thank_u.html"> -->
             <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
-            <button type="submit">send</button>
+            <button type="submit" style="width: 90%;">send</button>
         </form>
     </div>
-        <footer>
+        <footer class="foot">
             <h2>connect with me </h2>
             <div class="social">
                 <a href="https://mail.google.com/mail/?view=cm&to=priyajoy2668@gmail.com"> 

@@ -17,7 +17,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background: linear-gradient(to left, rgb(245, 233, 191),rgb(235, 151, 151));
+            background: linear-gradient(to left, beige, );
 
         }
 
@@ -55,7 +55,7 @@
 
         /* Footer styles */
         footer {
-        background: linear-gradient(to right, #fca5a5, #f87171);
+        background: linear-gradient(to right,beige,brown);
         text-align: center;
         padding: 20px;
         position: relative;
@@ -101,7 +101,7 @@
         }
         .all nav{
             text-align: center;
-            background-color: burlywood;
+            /* background-color: burlywood; */
         }
         .res{
             text-align: center;
@@ -132,7 +132,7 @@
         }
         .foot i {
             font-size: 30px;
-            color: rgb(195, 17, 17);
+            color: rgb(0, 0, 0);
             padding: 10px;
             /* margin-bottom: 1px; */
         }
@@ -141,62 +141,67 @@
             color: brown;
 
         }
-        @media (max-width: 450px) {
+        @media screen and (max-width: 450px) {
         .intro-section {
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
             padding: 20px;
         }
-                *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         .intro-text {
-            font-size: 18px;
+            font-size: 16px;
             text-align: center;
         }
 
         .intro-image img {
-            width: 200px;
+            width: 180px;
+        }
+
+        .navigation {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .navigation a {
-            font-size: 16px;
+            font-size: 15px;
             padding: 5px;
+            margin: 3px;
+        }
+
+        h1 {
+            font-size: 15px;
+            text-align: center;
         }
 
         .res button {
-            font-size: 16px;
-            padding: 8px;
+            font-size: 14px;
+            padding: 6px 10px;
             margin-top: 10px;
         }
 
         .para p {
-            font-size: 16px;
+            font-size: 14px;
+            padding: 10px;
         }
 
         footer {
-            font-size: 14px;
-            height: auto;
-            padding: 15px 10px;
+            font-size: 13px;
+            padding: 12px;
         }
 
         .foot i {
-            font-size: 24px;
-            padding: 8px;
+            font-size: 22px;
+            padding: 6px;
         }
 
         .foot i:hover {
-            font-size: 28px;
+            font-size: 26px;
         }
-
-        h1 {
-            text-align: center;
+            }
+        .back_c{
+            background-color: rgb(245, 233, 191);
         }
-    }
 
 
     </style>
